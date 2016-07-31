@@ -1,13 +1,8 @@
 @import 'bootstrap.min.scss';
 @import 'jquery.fancybox.scss';
 @import 'animate';
+@import 'etline-font';
+@import 'default';
+@import 'header';
+@import 'queries';
 
-body{
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  background-color: pink;
-
-  p {
-    font-size: 90px;
-  }
-}
