@@ -7904,6 +7904,20 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic; }
 
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp6a, .wp7, .wp8, .wp9, .wp10, .wp11, .wp12 {
+  visibility: hidden; }
+
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+  visibility: visible; }
+
+.delay-05s {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
 header {
   height: 100%; }
 
@@ -8263,3 +8277,19 @@ header {
   to {
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0); } }
+.intro {
+  padding: 100px 0;
+  background-color: #f4f5f7; }
+  .intro h1 {
+    color: #424242;
+    font-size: 15px;
+    margin: 0 0 30px 140px;
+    font-weight: bold; }
+  .intro p {
+    margin: 0 0 20px 140px;
+    line-height: 30px; }
+
+.avatar {
+  width: 111px;
+  height: 110px;
+  position: absolute; }

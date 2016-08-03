@@ -1,0 +1,22 @@
+$dark-white: #f4f5f7;
+$gray: #424242;
+
+.intro {
+  padding: 100px 0;
+  background-color: $dark-white;
+  h1 {
+    color: $gray;
+    font-size: 15px;
+    margin: 0 0 30px 140px;
+    font-weight: bold;
+  }
+  p {
+    margin: 0 0 20px 140px;
+    line-height: 30px;
+  }
+}
+.avatar {
+  width: 111px;
+  height: 110px;
+  position: absolute;
+}
