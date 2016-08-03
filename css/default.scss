@@ -84,3 +84,19 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic
 }
+
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp6a, .wp7, .wp8, .wp9, .wp10, .wp11, .wp12 {
+  visibility: hidden
+}
+
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+  visibility: visible
+}
+.delay-05s {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s
+}
+.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s
+}
