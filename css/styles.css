@@ -8082,7 +8082,9 @@ span:hover:before, span:hover, span:hover:after {
   transform: translatey(-50%); }
 
 .overlay ul li a:hover, .overlay ul li a:focus {
-  color: #e6ae49; }
+  color: #e6ae49;
+  text-decoration: none;
+  outline: none; }
 
 .navigation {
   visibility: hidden;
@@ -8188,8 +8190,9 @@ span:hover:before, span:hover, span:hover:after {
     -moz-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center span;
-      align-items-display: inline-block; }
+    align-items: center; }
+    .header-content h1 span {
+      display: inline-block; }
   .header-content a.featured-work {
     padding: 15px 25px;
     display: inline-block;
@@ -8262,8 +8265,16 @@ span:hover:before, span:hover, span:hover:after {
     outline: none; }
   .down-arrow i {
     color: #fff; }
-    .down-arrow i:focus {
-      outline: none; }
+    .down-arrow i:focus, .down-arrow i:hover {
+      outline: none;
+      color: #e6ae49; }
+
+.fa-angle-down {
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-decoration: none; }
 
 .floating-arrow {
   -webkit-animation-name: floating-arrow;
@@ -8301,3 +8312,19 @@ span:hover:before, span:hover, span:hover:after {
   width: 111px;
   height: 110px;
   position: absolute; }
+
+.bar-chart--wrapper {
+  position: relative;
+  margin-bottom: 35px;
+  margin: 0 auto; }
+
+.bar-chart-text {
+  text-align: left; }
+
+.bar-wrapper {
+  background-color: #f4f5f7; }
+
+.bar {
+  height: 8px;
+  margin: 8px 0;
+  background-color: #e6ae49; }
