@@ -11,6 +11,7 @@ $(document).ready(function(){
   $('.nav-toggle').on('click',function(){
     $(this).toggleClass("active");
     $('.navigation').toggleClass('open');
+    event.preventDefault();
   })
 
   /* When user clicks a link */  
@@ -53,6 +54,7 @@ $(document).ready(function(){
           }
         }
       });
+
 
     /***************** Bar Chart Animation ******************/
 
