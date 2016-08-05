@@ -7931,6 +7931,11 @@ header {
   overflow: visible;
   background: #284666 url("../images/ajax-loader.gif") no-repeat center center; }
 
+.logo:after {
+  content: ".";
+  font-size: 20px;
+  color: #e6ae49; }
+
 .header-background {
   position: relative;
   height: 100%;
@@ -7988,8 +7993,11 @@ header {
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px;
-  background: #fff;
+  background-color: #fff;
   cursor: pointer; }
+
+span:hover:before, span:hover, span:hover:after {
+  background-color: #e6ae49; }
 
 .nav-toggle span:before {
   top: -10px; }
@@ -8074,7 +8082,7 @@ header {
   transform: translatey(-50%); }
 
 .overlay ul li a:hover, .overlay ul li a:focus {
-  color: #284666; }
+  color: #e6ae49; }
 
 .navigation {
   visibility: hidden;

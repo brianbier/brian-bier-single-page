@@ -1,6 +1,7 @@
 $navy: rgb(40, 70, 102);
 $black: rgba(0, 0, 0, 1);
 $light-black: rgba(0, 0, 0, 0.7);
+$gold: #e6ae49;
 $white: #fff;
 header {
   height: 100%
@@ -15,6 +16,11 @@ header {
   height: 100%;
   overflow: visible;
   background: $navy url('../images/ajax-loader.gif') no-repeat center center;
+}
+.logo:after{
+  content: ".";
+  font-size: 20px;
+  color: $gold;
 }
 
 .header-background{
@@ -82,15 +88,17 @@ header {
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px;
-  background: $white;
+  background-color: $white;
   cursor: pointer;
 }
-
+span:hover:before, span:hover,span:hover:after{
+  background-color: $gold;
+}
 .nav-toggle span:before {
-  top: -10px
+  top: -10px;
 }
 .nav-toggle span:after {
-  bottom: -10px
+  bottom: -10px;
 }
 
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after{
@@ -181,7 +189,7 @@ header {
 }
 
 .overlay ul li a:hover, .overlay ul li a:focus {
-  color: $navy;
+  color: $gold;
 }
 
 .navigation {
