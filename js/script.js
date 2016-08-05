@@ -54,6 +54,26 @@ $(document).ready(function(){
         }
       });
 
+    /***************** Bar Chart Animation ******************/
+
+    $('.bar').width('0%');
+    $('.bar').waypoint(function() {
+        $('.bar').each(function() {
+            var width = $(this).data("percentage");
+            $(this).animate({
+                width: width
+            }, {
+                duration: 2000,
+                // easing: 'easeOutExpo',
+            });
+        });
+    }, {
+        offset: '85%'
+    });
+
+
+      
+
 });
 
 

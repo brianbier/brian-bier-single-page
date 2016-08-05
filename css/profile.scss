@@ -1,5 +1,10 @@
 $dark-white: #f4f5f7;
 $gray: #424242;
+$white: #fff;
+$navy: rgb(40, 70, 102);
+$black: rgba(0, 0, 0, 1);
+$light-black: rgba(0, 0, 0, 0.7);
+$gold: #e6ae49;
 
 .intro {
   padding: 100px 0;
@@ -20,3 +25,23 @@ $gray: #424242;
   height: 110px;
   position: absolute;
 }
+
+.bar-chart--wrapper{
+  position: relative;
+  margin-bottom: 35px;
+  margin: 0 auto;
+}
+
+.bar-chart-text{
+  text-align: left;
+}
+
+.bar-wrapper{
+  background-color: $dark-white;
+}
+.bar {
+  height:8px;
+  margin: 8px 0;
+  background-color: $gold;
+}
+
