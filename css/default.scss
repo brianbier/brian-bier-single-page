@@ -7,6 +7,10 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%
 }
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
 
 html, button, input, select, textarea {
   font-family: sans-serif;
@@ -79,7 +83,13 @@ h6 {
   font-size: 0.75em;
   margin: 2.33em 0
 }
-
+menu, ol, ul {
+  padding: 0 0 0 0
+}
+ul, ol {
+  list-style: none;
+  list-style-image: none
+}
 img {
   border: 0;
   -ms-interpolation-mode: bicubic

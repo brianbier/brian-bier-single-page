@@ -1,0 +1,185 @@
+$dark-white: #f5f6fa;
+$gray: #424242;
+$light-gray: #7f7f7f;
+$white: #fff;
+$navy: rgb(40, 70, 102);
+$black: rgba(0, 0, 0, 1);
+$light-black: rgba(0, 0, 0, 0.7);
+$gold: #e6ae49;
+$twitter: #69b1eb;
+$dark-twitter: #449ee6;
+.projects{
+  background-color: $white;
+}
+
+.projects-text{
+  margin-bottom: 100px;
+  margin-top: 100px;
+  h1 {
+    color: $gray;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0 0 20px 0;
+  }
+  p {
+    padding-right: 0;
+    font-size: 15px;
+    line-height: 30px;
+    color: $light-gray;
+    margin-bottom: 100px;
+  }
+}
+
+.projects figcaption .caption-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -150px;
+  width: 300px;
+  -moz-transform: translate(0, 15px);
+  -ms-transform: translate(0, 15px);
+  -o-transform: translate(0, 15px);
+  -webkit-transform: translate(0, 15px);
+  transform: translate(0, 15px);
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  .icon {
+    font-size: 6px;
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+}
+figure{
+  margin:0;
+}
+.projects figure:hover figcaption .caption-content, .projects figure:focus figcaption .caption-content {
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.projects figure {
+  position: relative;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    height: 100%;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out
+  }  
+}
+
+.projects figure:hover img, .projects figure:focus img {
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1)
+}
+
+.projects figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $light-black;
+  text-align: center;
+  font-size: 15px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  a {
+    color: $white;
+    &:hover, &:focus{
+      color: $white;
+    }
+  }
+  p {
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px
+  }
+}
+.projects figure:hover figcaption, .projects figure:focus figcaption {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1
+}
+
+.projects figcaption{
+  .share-twitter{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: $twitter;
+    color: $white;
+    &:hover{
+      background-color: $dark-twitter;
+    }
+    i{
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+  .github {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: $light-gray;
+    color: #fff;
+    &:hover{
+      background-color:$gray;
+    }
+    i{
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+  .view-live{
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    background-color: #4dbfc6;
+    color: #fff;
+    &:hover{
+      background-color:#3e9ea3;
+    }
+    i{
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+}
+.projects ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  li {
+    float: left;
+    min-height: 100%;
+    width: 50%;
+    background-color: #fff;
+    list-style: none
+  }
+}
+
