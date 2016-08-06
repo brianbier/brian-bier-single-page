@@ -1,45 +1,46 @@
-/***************** Preloader ******************/
+// /***************** Preloader ******************/
 $(document).ready(function(){
+    
   $('#preloader').fadeOut('slow',function(){
     $(this).remove();
     $('.slide-down-content').addClass('textAppear');
   })
 
-  /***************** Nav Transformicon ******************/
+//   /***************** Nav Transformicon ******************/
 
-  /* When user clicks the Icon */
-  $('.nav-toggle').on('click',function(){
-    $(this).toggleClass("active");
-    $('.navigation').toggleClass('open');
-    event.preventDefault();
-  })
+        /* When user clicks the Icon */
+        $(".nav-toggle").click(function() {
+            $(this).toggleClass("active");
+            $(".navigation").toggleClass("open");
+            event.preventDefault();
+        });
 
-  /* When user clicks a link */  
-  $('.overlay ul li a').on('click',function(){
-    $(".nav-toggle").toggleClass("active");
-    $(".navigation").toggleClass("open");
-  })
+        /* When user clicks a link */
+        $(".overlay ul li a").click(function() {
+            $(".nav-toggle").toggleClass("active");
+            $(".navigation").toggleClass("open");
+        });
 
-  /* When user clicks outside */
-  $(".overlay").click(function() {
-      $(".nav-toggle").toggleClass("active");
-      $(".navigation").toggleClass("open");
-  });
+        /* When user clicks outside */
+        $(".overlay").click(function() {
+            $(".nav-toggle").toggleClass("active");
+            $(".navigation").toggleClass("open");
+        });
 
 
   /***************** Header Background Scroll ******************/
         $(function() {
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();
-                if (scroll >= 40) {
+
+                if (scroll >= 610) {
                     $(".fixed-header").addClass("hasBg header-sml");
                 } else {
                     $(".fixed-header").removeClass("hasBg header-sml");
                 }
             });
         });
-        
-            /***************** Smooth Scrolling ******************/
+    /***************** Smooth Scrolling ******************/
 
       $("a[href*=\\#]:not([href=\\#])").click(function() {
         if (location.pathname.replace(/^\//, ") === this.pathname.replace(/^\//, ") && location.hostname === this.hostname) {
@@ -57,21 +58,19 @@ $(document).ready(function(){
 
 
     /***************** Bar Chart Animation ******************/
-
-    $('.bar').width('0%');
-    $('.bar').waypoint(function() {
-        $('.bar').each(function() {
-            var width = $(this).data("percentage");
-            $(this).animate({
-                width: width
-            }, {
-                duration: 2500,
-                // easing: 'easeOutExpo',
-            });
-        });
-    }, {
-        offset: '75%'
-    });
+    // $('.bar').width('0%');
+    // $('.bar').waypoint(function() {
+    //     $('.bar').each(function() {
+    //         var width = $(this).data("percentage");
+    //         $(this).animate({
+    //             width: width
+    //         }, {
+    //             duration: 1000
+    //         });
+    //     });
+    // }, {
+    //     offset: '55%'
+    // });
 
 
         /***************** Waypoints ******************/
@@ -134,7 +133,8 @@ $(document).ready(function(){
             offset: '75%'
         });
 
-        /***************** To-Top Button ******************/
+
+         /***************** To-Top Button ******************/
 
         // browser window scroll (in pixels) after which the "back to top" link is shown
         var offset = 300,
@@ -144,7 +144,7 @@ $(document).ready(function(){
             scroll_top_duration = 700,
             //grab the "back to top" link
             $back_to_top = $('.cd-top');
-            
+
         //hide or show the "back to top" link
         $(window).scroll(function() {
             ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible'): $back_to_top.removeClass('cd-is-visible cd-fade-out');

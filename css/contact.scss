@@ -8,6 +8,7 @@ $light-black: rgba(0, 0, 0, 0.7);
 $gold: #e6ae49;
 $twitter: #69b1eb;
 $dark-twitter: #449ee6;
+
 .contact-wrapper {
   position: relative
 }
@@ -30,29 +31,20 @@ $dark-twitter: #449ee6;
     color: #c9c9c9;
     width: 45%;
     margin-bottom: 15px;
-  }
-  .copy-right{
-    font-size: 15px;
-    color: #7f7f7f;
-    margin-bottom: 0;
+    .copy-right{
+      font-size: 13px;
+      color: #7f7f7f;
+      margin-bottom: 0;
+    }
     span {
-      color: #ff415c;
-      font-size: 15px;
-      margin: 0 5px;
+        color: #ff415c;
+        font-size: 15px;
+        margin: 0 5px;
     }
   }
 }
 
 .contact{
-  .footer-socials{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    i{
-      color: $white;
-      margin-top: 18px;
-    }
     li{
       display: inline-block;
       margin: 0;
@@ -66,8 +58,20 @@ $dark-twitter: #449ee6;
 
       }
     }
+}
+
+
+.footer-socials {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  i {
+    color: #fff;
+    margin-top: 18px
   }
 }
+
 
 .footer-linkedin a {
   background-color: #1c87bd;
