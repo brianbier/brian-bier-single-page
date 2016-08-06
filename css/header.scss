@@ -22,27 +22,31 @@ header {
   font-size: 20px;
   color: $gold;
 }
-#particles-js {
-  // position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: $navy;
-  // background-image: url("../images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
+// #particles-js {
+//   // position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   z-index: -2;
+//   background-color: $navy;
+//   // background-image: url("../images/background.png");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: 50% 50%;
+// }
 
-
+// .particles-js-canvas-el{
+//   position: absolute;
+//   top:0;
+//   // z-index: -1;
+// }
 
 .header-background{
-  position: absolute;
+  position: relative;
   height: 100%;
-  width: 100%;
-  // background: $navy url('../images/background.png') fixed center center;
-  // -webkit-background-size: cover;
-  // background-size: cover;
+  // width: 100%;
+  background: $navy url('../images/background.png') fixed center center;
+  -webkit-background-size: cover;
+  background-size: cover;
   color: $white;
 }
 
