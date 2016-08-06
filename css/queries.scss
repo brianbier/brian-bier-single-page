@@ -151,10 +151,18 @@
     .header-content h1{
       font-size: 20px;
     }
+    .quote {
+      h1{
+        font-size: 20px;
+      }
+      .author{
+        font-size: 15px;
+      }
+    }
   }
   @media screen and (max-width:320px) {
-    section.quote {
-      background: url('../img/design.jpg') no-repeat center center;
+    .quote {
+      background: url('../images/design.jpg') no-repeat center center;
       background-size: cover;
     }
   }

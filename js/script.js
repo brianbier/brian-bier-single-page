@@ -33,7 +33,7 @@ $(document).ready(function(){
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();
 
-                if (scroll >= 610) {
+                if (scroll >= 80) {
                     $(".fixed-header").addClass("hasBg header-sml");
                 } else {
                     $(".fixed-header").removeClass("hasBg header-sml");
@@ -59,17 +59,18 @@ $(document).ready(function(){
 
     /***************** Bar Chart Animation ******************/
     // $('.bar').width('0%');
-    // $('.bar').waypoint(function() {
-    //     $('.bar').each(function() {
-    //         var width = $(this).data("percentage");
-    //         $(this).animate({
-    //             width: width
-    //         }, {
-    //             duration: 1000
-    //         });
-    //     });
+    // $('.bar').waypoint(function(){
+        
+    //     $('.bar').each(function(){
+    //     // debugger;
+    //     var width = $(this).attr('data-percentage')
+    //     $(this).animate({
+    //         width: width
+    //         }, 2000);
+    //     })
+
     // }, {
-    //     offset: '55%'
+    //     offset: '75%'
     // });
 
 
