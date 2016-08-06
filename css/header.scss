@@ -22,13 +22,27 @@ header {
   font-size: 20px;
   color: $gold;
 }
+#particles-js {
+  // position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: $navy;
+  // background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
 
 .header-background{
-  position: relative;
+  position: absolute;
   height: 100%;
-  background: $navy url('../images/background.png') fixed center center;
-  -webkit-background-size: cover;
-  background-size: cover;
+  width: 100%;
+  // background: $navy url('../images/background.png') fixed center center;
+  // -webkit-background-size: cover;
+  // background-size: cover;
   color: $white;
 }
 
@@ -91,7 +105,7 @@ header {
   background-color: $white;
   cursor: pointer;
 }
-span:hover:before, span:hover,span:hover:after{
+.nav-toggle span:hover:before, .nav-toggle span:hover,.nav-toggle span:hover:after{
   background-color: $gold;
 }
 .nav-toggle span:before {
@@ -359,6 +373,24 @@ span:hover:before, span:hover,span:hover:after{
   font-weight: bold;
   white-space: nowrap
 }
+
+@-moz-keyframes textAppear {
+  0% {
+    width: 0
+  }
+  100% {
+    width: 135px
+  }
+}
+@-o-keyframes textAppear {
+  0% {
+    width: 0
+  }
+  100% {
+    width: 135px
+  }
+}
+
 @-webkit-keyframes textAppear {
   0% {
     width: 0
@@ -376,12 +408,14 @@ span:hover:before, span:hover,span:hover:after{
   }
 }
 
+
 .down-arrow {
   color: $white;
-  font-size: 50px;
+  font-size: 40px;
   position: absolute;
-  bottom: 30px;
+  bottom: 25%;
   left: 50%;
+  text-align: center;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -401,7 +435,7 @@ span:hover:before, span:hover,span:hover:after{
     -moz-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
     -webkit-transition: all 200ms ease-in-out;
-    transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in-out;
     text-decoration: none;
 }
 .floating-arrow {
@@ -414,6 +448,53 @@ span:hover:before, span:hover,span:hover:after{
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out
 }
+
+@-moz-keyframes floating-arrow {
+  from {
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%, 0);
+  }
+  67% {
+    -webkit-transform: translate(-50%, 15px);
+    transform: translate(-50%, 15px)
+  }
+  to {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
+  }
+}
+
+@-o-keyframes floating-arrow {
+  from {
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%, 0);
+  }
+  67% {
+    -webkit-transform: translate(-50%, 15px);
+    transform: translate(-50%, 15px)
+  }
+  to {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
+  }
+}
+
+
+@-webkit-keyframes floating-arrow {
+  from {
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%, 0);
+  }
+  67% {
+    -webkit-transform: translate(-50%, 15px);
+    transform: translate(-50%, 15px)
+  }
+  to {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
+  }
+}
+
 
 @keyframes floating-arrow {
   from {

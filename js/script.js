@@ -65,17 +65,111 @@ $(document).ready(function(){
             $(this).animate({
                 width: width
             }, {
-                duration: 2000,
+                duration: 2500,
                 // easing: 'easeOutExpo',
             });
         });
     }, {
-        offset: '85%'
+        offset: '-25%'
     });
 
 
-      
+        /***************** Waypoints ******************/
 
+        $('.wp1').waypoint(function() {
+            $('.wp1').addClass('animated fadeInLeft');
+        }, {
+            offset: '-25%'
+        });
+        $('.wp2').waypoint(function() {
+            $('.wp2').addClass('animated fadeInDown');
+            $('.wp3').addClass('animated fadeInLeft');
+            $('.wp4').addClass('animated fadeInRight');
+        }, {
+            offset: '75%'
+        });
+        $('.wp5').waypoint(function() {
+            $('.wp5').addClass('animated fadeInDown');
+        }, {
+            offset: '-15%'
+        });
+        $('.wp6a').waypoint(function() {
+            $('.wp6a').addClass('animated fadeInDown');
+        }, {
+            offset: '75%'
+        });
+        $('.wp6').waypoint(function() {
+            $('.wp6').addClass('animated fadeInLeft');
+        }, {
+            offset: '-15%'
+        });
+        $('.wp7').waypoint(function() {
+            $('.wp7').addClass('animated fadeInRight');
+        }, {
+            offset: '-25%'
+        });
+        $('.wp8').waypoint(function() {
+            $('.wp8').addClass('animated fadeInLeft');
+        }, {
+            offset: '75%'
+        });
+        $('.wp9').waypoint(function() {
+            $('.wp9').addClass('animated fadeInRight');
+        }, {
+            offset: '-15%'
+        });
+        $('.wp10').waypoint(function() {
+            $('.wp10').addClass('animated fadeInLeft');
+        }, {
+            offset: '-15%'
+        });
+        $('.wp11').waypoint(function() {
+            $('.wp11').addClass('animated fadeInRight');
+        }, {
+            offset: '-15%'
+        });
+        $('.wp12').waypoint(function() {
+            $('.wp12').addClass('animated fadeInUp');
+        }, {
+            offset: '-20%'
+        });
+
+        /***************** To-Top Button ******************/
+
+        // browser window scroll (in pixels) after which the "back to top" link is shown
+        var offset = 300,
+            //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+            offset_opacity = 1200,
+            //duration of the top scrolling animation (in ms)
+            scroll_top_duration = 700,
+            //grab the "back to top" link
+            $back_to_top = $('.cd-top');
+            
+        //hide or show the "back to top" link
+        $(window).scroll(function() {
+            ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible'): $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if ($(this).scrollTop() > offset_opacity) {
+                $back_to_top.addClass('cd-fade-out');
+            }
+        });
+
+        //smooth scroll to top
+        $back_to_top.on('click', function(event) {
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: 0,
+            }, scroll_top_duration);
+        });
+
+        /***************** BootStrap ToolTip ******************/
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        /***************** Particles JS ******************/
+        particlesJS.load('particles-js', 'js/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
 });
 
 
