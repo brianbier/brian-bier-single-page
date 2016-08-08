@@ -58,20 +58,20 @@ $(document).ready(function(){
 
 
     /***************** Bar Chart Animation ******************/
-    // $('.bar').width('0%');
-    // $('.bar').waypoint(function(){
+    $('.bar').width('0%');
+    $('.bar').waypoint(function(){
         
-    //     $('.bar').each(function(){
-    //     // debugger;
-    //     var width = $(this).attr('data-percentage')
-    //     $(this).animate({
-    //         width: width
-    //         }, 2000);
-    //     })
+        $('.bar').each(function(){
+        // debugger;
+        var width = $(this).attr('data-percentage')
+        $(this).animate({
+            width: width
+            }, 2000);
+        })
 
-    // }, {
-    //     offset: '75%'
-    // });
+    }, {
+        offset: '75%'
+    });
 
 
         /***************** Waypoints ******************/

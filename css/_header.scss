@@ -1,8 +1,3 @@
-$navy: rgb(40, 70, 102);
-$black: rgba(0, 0, 0, 1);
-$light-black: rgba(0, 0, 0, 0.7);
-$gold: #e6ae49;
-$white: #fff;
 header {
   height: 100%
 }
@@ -15,12 +10,12 @@ header {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: $navy url('../images/ajax-loader.gif') no-repeat center center;
+  background: $black url('../images/ajax-loader.gif') no-repeat center center;
 }
 .logo:after{
   content: ".";
   font-size: 20px;
-  color: $gold;
+  color: $orange;
 }
 // #particles-js {
 //   // position: absolute;
@@ -44,8 +39,10 @@ header {
   position: relative;
   height: 100%;
   // width: 100%;
-  background: $navy url('../images/background.png') fixed center center;
+  background: $navy url('../images/background-1.jpg') no-repeat center center;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: $white;
 }
@@ -109,9 +106,9 @@ header {
   background-color: $white;
   cursor: pointer;
 }
-.nav-toggle span:hover:before, .nav-toggle span:hover,.nav-toggle span:hover:after{
-  background-color: $gold;
-}
+// .nav-toggle span:hover:before, .nav-toggle span:hover,.nav-toggle span:hover:after{
+//   background-color: $green;
+// }
 .nav-toggle span:before {
   top: -10px;
 }
@@ -207,7 +204,7 @@ header {
 }
 
 .overlay ul li a:hover, .overlay ul li a:focus {
-  color: $gold;
+  color: $green;
   text-decoration: none;
   outline: none;
 }
@@ -338,8 +335,9 @@ header {
     -webkit-transition: all 200ms ease-in-out;
     transition: all 300ms ease-in-out;
     &:hover, &:focus{
-      background-color: $white;
-      color: $black;
+      background-color: $orange;
+      border: solid 2px $orange;
+      color: $white;
       text-decoration: none
     }
   }
@@ -430,7 +428,7 @@ header {
     color: $white;
     &:focus, &:hover{
       outline: none;
-      color: $gold;
+      color: $green;
     }
   }
 }

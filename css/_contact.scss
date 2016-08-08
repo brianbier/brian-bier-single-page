@@ -1,21 +1,10 @@
-$dark-white: #f5f6fa;
-$gray: #424242;
-$light-gray: #7f7f7f;
-$white: #fff;
-$navy: rgb(40, 70, 102);
-$black: rgba(0, 0, 0, 1);
-$light-black: rgba(0, 0, 0, 0.7);
-$gold: #e6ae49;
-$twitter: #69b1eb;
-$dark-twitter: #449ee6;
-
 .contact-wrapper {
   position: relative
 }
 
 .contact {
   padding: 100px 0;
-  background: url(../images/design.jpg) fixed center center;
+  background: url(../images/design.jpg) no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;
@@ -97,10 +86,10 @@ $dark-twitter: #449ee6;
 }
 
 .footer-mail a {
-  background-color: #3dc9b3;
+  background-color: lighten($green,15%);
   font-size: 25px;
   &:hover{
-    background-color: #38A18F
+    background-color: $green;
   }
 }
 
