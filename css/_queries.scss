@@ -1,4 +1,4 @@
-  @media screen and (max-width:1200px) {
+@media screen and (max-width:1200px) {
   .figcaption-content {
     width: 440px;
     margin-left: -220px;
@@ -51,6 +51,24 @@
     position: static;
     margin: 30px 0;
   }
+    .header-background{
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: $green url('../images/background-1.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color: $white;
+    }
+    .projects ul li {
+      width: 100%;
+      width: 100%;
+      background-color: #fff;
+      list-style: none;
+    }
+
   }
   @media screen and (max-width:800px) {
     .avatar {
@@ -62,6 +80,17 @@
     }
     .intro p {
       margin-left: 0;
+    }
+    .header-background{
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: $green url('../images/background-1.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color: $white;
     }
   }
   @media screen and (max-width:640px) {
@@ -102,8 +131,12 @@
       width: 100%;
       text-align: center;
     }
-    .screenshots ul li,
     .projects ul li {
+      width: 100%;
+      height: 300px;
+
+    }
+    .projects img {
       width: 100%;
     }
     .cd-top {
@@ -125,6 +158,17 @@
     }
     .intro p {
       margin-left: 0;
+    }
+    .header-background{
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: $green url('../images/background-1.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color: $white;
     }
 
   }
@@ -149,7 +193,7 @@
       margin-bottom: 0;
     }
     .header-content h1{
-      font-size: 20px;
+      font-size: 35px;
     }
     .quote {
       h1{
@@ -158,6 +202,25 @@
       .author{
         font-size: 15px;
       }
+    }
+    .header-background{
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: $green url('../images/background-1.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color: $white;
+    }
+    .projects ul li {
+      width: 100%;
+      height: 180%;
+      
+    }
+    .projects img {
+      width: 100%;
     }
   }
   @media screen and (max-width:320px) {
