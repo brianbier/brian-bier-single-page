@@ -1,10 +1,11 @@
 // /***************** Preloader ******************/
 $(document).ready(function(){
-    
-  $('#preloader').fadeOut('slow',function(){
-    $(this).remove();
-    $('.slide-down-content').addClass('textAppear');
-  })
+    setTimeout(function() {
+    $('#preloader').fadeOut('slow',function(){
+        $(this).remove();
+        $('.slide-down-content').addClass('textAppear');
+    })
+    }, 1600)
 
 //   /***************** Nav Transformicon ******************/
 
@@ -163,9 +164,13 @@ $(document).ready(function(){
         });
 
         /***************** BootStrap ToolTip ******************/
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            return;
+        }else{
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+        };
 
         // /***************** Particles JS ******************/
         // particlesJS.load('particles-js', 'js/particles.json', function() {
