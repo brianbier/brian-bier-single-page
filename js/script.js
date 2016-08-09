@@ -35,9 +35,9 @@ $(document).ready(function(){
                 var scroll = $(window).scrollTop();
 
                 if (scroll >= 80) {
-                    $(".fixed-header").addClass("hasBg header-sml");
+                    $(".fixed-header").addClass("hasBg header-sml shadow");
                 } else {
-                    $(".fixed-header").removeClass("hasBg header-sml");
+                    $(".fixed-header").removeClass("hasBg header-sml shadow");
                 }
             });
         });
