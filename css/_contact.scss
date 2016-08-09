@@ -86,10 +86,10 @@
 }
 
 .footer-mail a {
-  background-color: lighten($green,15%);
+  background-color: $green;
   font-size: 25px;
   &:hover{
-    background-color: $green;
+    background-color:darken($green,10%);
   }
 }
 
